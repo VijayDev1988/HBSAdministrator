@@ -1,0 +1,37 @@
+<div style="float:right; padding-right:10px; ">            
+    <a class="btn btn-primary" (click)="logOut(form)">Logout</a>
+</div>
+<form novalidate #form="ngForm" (submit)="onSubmit(form)" style="margin-left:40%; margin-top: 5%;">
+    <h4>Add Room</h4>
+    
+    <input type="hidden" name="bookingId"
+    [value]="service.formdata.roomNumber">
+    <div class="form-row">
+    <div class="form-group col-md-4"> 
+        <label class="py-2">Room No</label>
+        <input class="form-control form-control-lg" placeholder="Room Number" 
+        name="roomNumber" #roomNumber="ngModel" [(ngModel)]="service.formdata.roomNumber" 
+        required [class.invalid]>
+    </div>
+</div>
+    <div class="form-row py-2">
+        <div class="form-group col-md-4">
+            <label class="py-3">Room Type</label>
+            <select class="form-control form-control-lg" placeholder="Select Room Type" 
+            name="roomType" #roomType="ngModel" [(ngModel)]="service.formdata.roomType" required [class.invalid]>
+            <option value="0" selected>Single</option>
+            <option value="1">Double</option>
+        </select>
+        </div>
+        
+    </div>
+    <div class="d-xl-inline-flex">
+        <div class="form-group form-row col-md-2">                
+            <input type="submit" value="Add Room" class="btn btn-primary" [disabled]="form.invalid"/>
+        </div>
+        <div class="form-group form-row col-md-2" style="min-width: max-content;margin-left: 60px;">                
+            <!-- <input type="submit" value="Room Status" class="btn btn-primary" /> -->
+            <a class="btn btn-primary" (click)="reDirectToLogin(form)">Room Status</a>
+        </div>
+    </div>
+</form> 

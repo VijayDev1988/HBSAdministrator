@@ -1,0 +1,32 @@
+<div class="jumbotron py-3">
+    <h1 class="display-4 text-center">Hotel Booking System</h1>    
+</div>
+<div style="margin-left: 40%; margin-top: 5%;">
+    <form novalidate #form="ngForm" (submit)="onSubmit(form)">
+    <input type="hidden" name="id"
+    [value]="service.userdata.id">
+    <div class="form-row">
+    <div class="form-group col-md-4"> 
+        <label >Email Id</label>
+        <input class="form-control form-control-lg" placeholder="Email Id" 
+        name="Email" #Email="ngModel" [(ngModel)]="service.userdata.email" 
+        required [class.invalid] >
+    </div>
+</div>
+    <div class="form-row py-2">
+        <div class="form-group col-md-4">
+            <label class="py-3">Password</label>
+            <input type="password" class="form-control form-control-lg" placeholder="Password" 
+        name="Password" #Password="ngModel" [(ngModel)]="service.userdata.password" 
+        required [class.invalid]>
+            
+        </div>
+        
+    </div>
+    <div class="d-xl-inline-flex">
+        <div class="form-group form-row col-md-2">                
+            <input type="submit" value="Login" class="btn btn-primary" [disabled]="form.invalid"/>
+        </div>
+    </div>
+</form> 
+</div>
