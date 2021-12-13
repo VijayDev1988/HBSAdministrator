@@ -18,7 +18,15 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
+## Launch App
+
+Run `ng serve --o` to launch the app in the browser
+
 ## Default Login
+
+Setup the API environment first whcich will create local DB and admin login for this application.
+
+API and Clirnt Repo URL https://github.com/VijayDev1988/HotelBookingSystem.git
 
 user name : superadmin@gmail.com
 password : Pa$$word1
