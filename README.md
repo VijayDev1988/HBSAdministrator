@@ -18,5 +18,3 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 user name : superadmin@gmail.com
 password : Pa$$word1
-
-## Further help
