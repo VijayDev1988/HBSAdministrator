@@ -31,10 +31,6 @@ export class RoomListComponent implements OnInit {
   }
 
   populateForm(form:NgForm){
-    // if(this.service.formdataList.bookingDate == undefined){
-    //   this.toastr.error("Fill booking date", "Hotel Booking System");
-    // }
-
     this.service.getRoomDetails();
   }
 

@@ -52,7 +52,7 @@ export class RoomDetailsService {
        result.map(function(value,index){
         value.roomTypeName = value.roomType == 0 ? "Single" : "Double";
       });
-
+      
       this.list = result;
       }
       else {

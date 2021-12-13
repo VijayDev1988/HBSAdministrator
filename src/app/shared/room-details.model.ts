@@ -18,8 +18,4 @@ export class RoomDetailsList {
       roomTypeName:string;
       roomType:number;
       status:string
-
-      // constructor(private currentBookingDate: Date = new Date){
-            
-      // }
 }
