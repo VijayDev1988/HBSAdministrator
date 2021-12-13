@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Description
 
-This project is for the interview usecase of KOVAI.CO
+This project is for the interview usecase of KOVAI.CO Admin Module
 
 ## Development server
 
